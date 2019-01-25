@@ -1,0 +1,44 @@
+/* alegreya-regular - cyrillic_latin */
+@font-face {
+  font-family: 'Alegreya';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Alegreya Regular'), local('Alegreya-Regular'),
+       url('../fonts/Alegreya/alegreya-v11-cyrillic_latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/Alegreya/alegreya-v11-cyrillic_latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* alegreya-700 - cyrillic_latin */
+@font-face {
+  font-family: 'Alegreya';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Alegreya Bold'), local('Alegreya-Bold'),
+       url('../fonts/Alegreya/alegreya-v11-cyrillic_latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/Alegreya/alegreya-v11-cyrillic_latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* scriptina-regular - latin */
+@font-face {
+  font-family: 'Scriptina';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Scriptina Regular'), local('Scriptina-Regular'),
+       url('../fonts/Scriptina/scriptina.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/Scriptina/scriptina.woff') format('woff'); /* Firefox >= 3.6, any other modern browser */
+}
+/* ProximaNova-regular - cyrillic_latin */
+@font-face {
+  font-family: 'ProximaNova';
+  font-style: normal;
+  font-weight: 400;
+  src: local('ProximaNova Regular'), local('ProximaNova-Regular'),
+       url('../fonts/ProximaNova/ProximaNova.woff') format('woff');
+}
+/* playfair-display-700 - cyrillic_latin */
+@font-face {
+  font-family: 'PlayfairDisplay';
+  font-style: normal;
+  font-weight: 700;
+  src: local('PlayfairDisplay Bold'), local('PlayfairDisplay-Bold'),
+       url('../fonts/PlayfairDisplay/playfair-display-v13-cyrillic_latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/PlayfairDisplay/playfair-display-v13-cyrillic_latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
