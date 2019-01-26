@@ -35,6 +35,12 @@ body {
   	}
 }
 
+ul{
+	list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
 .img-responsive {
 	display: block;
 	max-width: 100%;
@@ -61,18 +67,18 @@ b, strong {
 ========================================== */
 
 .header{
-	height: calc(100vh - 57px);
+	// min-height: calc(100vh - 57px);
 	background: url('../img/main_bg.jpg') $accent left no-repeat;
 	background-size: cover;
 	display: flex;
 	flex-direction: column;
 	color: $light;
 	&__inner{
-		height: calc(100vh - 176px);
+		min-height: calc(100vh - 176px);
 		position: relative;
 		z-index: 100;
 		text-align: center;
-		padding-top: 49px;
+		padding: 49px 0;
 		&::after{
 			content: "";
 			position: absolute;
@@ -96,13 +102,14 @@ b, strong {
 		margin: 0;
 		letter-spacing: 7px;
 		position: relative;
+		width: 100%;
+
 	}
 	&__dashed-line{
 		width: 190px;
 		height: 12px;
-		min-height: 12px;
 		background: url('../img/main_dashed-line.png') no-repeat;
-		margin-top: 65px;
+		margin: 65px 0 65px 0;
 	}
 	&__text{
 		text-shadow: 0 1px 0 #3d3029;
@@ -110,9 +117,9 @@ b, strong {
 		font-size: 24px;
 		font-weight: 400;
 		line-height: 36px;
-		margin-top: 65px;
 		max-width: 560px;
 		letter-spacing: 2px;
+		width: 100%;
 	}
 	&__btn{
 		background-color: $navbar;
@@ -126,7 +133,7 @@ b, strong {
 		letter-spacing: 3px;
 		text-transform: uppercase;
 		display: inline-block;
-		margin-top: 65px;
+		margin: 65px 0 0 0;
 		transition: background-color .2s;
 		&:hover{
 			background-color: darken($navbar, 10%);
@@ -134,6 +141,7 @@ b, strong {
 	}
 	&__print{
 		background: url('../img/main_print.png') no-repeat;
+		background-size: contain;
 		width: 114px;
 		height: 106px;
 		position: relative;
@@ -143,6 +151,7 @@ b, strong {
 			content: "";
 			position: absolute;
 			background: url('../img/main_print-border.png');
+			background-size: contain;
 			width: calc(50vw - 57px);
 			right: 114px;
 			height: 106px;
@@ -151,6 +160,7 @@ b, strong {
 			content: "";
 			position: absolute;
 			background: url('../img/main_print-border.png');
+			background-size: contain;
 			width: calc(50vw - 57px);
 			left: 114px;
 			height: 106px;
@@ -169,11 +179,6 @@ b, strong {
 	&_inner{
 		height: 70px;
 	}
-	&__list{
-	    list-style: none;
-	    margin: 0;
-	    padding: 0;
-	}
 	&__menu-btn{
 		font-size: 40px;
 		cursor: pointer;
@@ -184,6 +189,7 @@ b, strong {
 }
 
 
+
 /*  navbar-mobile
 ========================================== */
 
@@ -192,19 +198,16 @@ b, strong {
 	position: absolute;
 	font-size: 26px;
   	top: 70px;
-  	padding-top: 60px;
+  	padding: 60px 0 40px 0;
   	left: 0;
   	right: 0;
+  	width: 100%;
   	max-width: 380px;
   	min-width: 320px;
   	margin: 0 auto;
   	display: none;
   	z-index: 500;
   	box-shadow: 0 40px 40px -40px #333 inset, 0 6px 20px -6px #111;
-  	&__list{
-		padding: 0;
-		margin: 0;
-  	}
   	&__item{
 		line-height: 48px;
 		margin: 0;
@@ -260,7 +263,6 @@ b, strong {
 	}
 }
 
-
 /*  social
 ========================================== */
 
@@ -281,6 +283,26 @@ b, strong {
     	color: $light;
 		&:hover{
 			color: darken($light, 10%);
+			text-decoration: none;
+		}
+    }
+}
+
+.social-mobile{
+	width: auto;
+	text-align: center;
+	margin-top: 25px;
+    &__item{
+    	display: inline-block;
+    	padding-right: 35px;
+    	&:last-child{
+    		padding-right: 0;
+    	}
+    }
+    &__icon{
+    	color: $text;
+		&:hover{
+			color: $hover-menu-mobile;
 			text-decoration: none;
 		}
     }

@@ -10,17 +10,65 @@
 
 // ≥992px
 @include media-breakpoint-down(md) {
-
+	.header{
+		&__slogan{
+			font-size: 78px;
+		}
+		&__dashed-line{
+			margin: 55px 0;
+		}
+	}
 }
 
 // ≥768px
 @include media-breakpoint-down(sm) {
-
+	.header{
+		&__slogan{
+			font-size: 70px;
+		}
+		&__dashed-line{
+			margin: 50px 0;
+		}
+		&__btn{
+			margin: 50px 0 0 0;
+		}
+	}
 }
 
 // ≥576px
 @include media-breakpoint-down(xs) {
-
+	.header{
+		&__inner{
+			min-height: calc(100vh - 123px);
+		}
+		&__slogan{
+			font-size: 13vw;
+		}
+		&__dashed-line{
+			margin: 25px 0;
+		}
+		&__text{
+			font-size: 20px;
+		}
+		&__btn{
+			margin: 60px 0 0 0;
+		}
+		&__print{
+			width: 57px;
+			height: 53px;
+			margin: auto auto -28.5px auto;
+		&::before{
+			width: calc(50vw - 28.5px);
+			right: 57px;
+			height: 53px;
+		}
+		&::after{
+			width: calc(50vw - 28.5px);
+			left: 57px;
+			height: 53px;
+		}
+		}
+	}
 }
 
 
@@ -43,5 +91,5 @@
 
 // ≤1200px
 @include media-breakpoint-up(xl) {
-	
+
 }
