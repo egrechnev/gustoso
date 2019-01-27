@@ -69,6 +69,33 @@
 			}
 		}
 	}
+
+	.navbar-mobile {
+		&__link{
+			&:hover{
+				color: $text;
+				text-decoration: none;
+				background: none;
+			}
+			&:active{
+				color: $light;
+				background-color: $hover-menu-mobile;
+			}
+		}
+	}
+
+	.social-mobile{
+	    &__icon{
+			&:hover{
+				color: $text;
+				text-decoration: none;
+			}
+			&:active{
+				color: $hover-menu-mobile;
+			}
+	    }
+	}
+
 }
 
 

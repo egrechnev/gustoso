@@ -28,13 +28,13 @@
 
 <body>
 
-	<!-- Custom HTML -->
+<div id="noscroll">
 
 	<header class="header">
 		<nav class="navbar">
 			<div class="container">
 				<div class="navbar_inner row justify-content-between align-items-center">
-					<div class="col-auto navbar__overlay">
+					<div class="col-auto">
 						<a class="logo" href=""><img class="img-responsive" src="img/logo.png"></a>
 					</div>
 					<div class="col text-center d-none d-lg-block">
@@ -73,7 +73,7 @@
 							</li>
 						</ul>
 					</div>
-					<div class="col-auto d-lg-none navbar__overlay">
+					<div class="col-auto d-lg-none">
 						<div class="burger">
 							  <span></span>
 						</div>
@@ -82,6 +82,7 @@
 			</div>
 		</nav>
 
+		<div class="navbar-mobile-wr">
 		<nav class="navbar-mobile d-lg-none">
 		    <ul class="navbar-mobile__list">
 		      <li class="navbar-mobile__item"><a data-fake-link class="navbar-mobile__link" href="">~ Welcome</a></li>
@@ -103,6 +104,7 @@
 				</li>
 			</ul>
 		</nav>
+		</div>
 
 
 		<div class="container d-flex flex-column">
@@ -124,6 +126,7 @@
 		
 	</section>
 
+</div>
 
 	<script src="js/scripts.min.js"></script>
 
