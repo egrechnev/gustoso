@@ -6,6 +6,24 @@
 // ≥1320px
 @include media-breakpoint-down(lg) {
 
+/*  art-of-cakes
+========================================== */
+	.art-of-cakes{
+		&__print{
+			font-size: 24px;
+			line-height: 30px;
+		}
+	}
+
+/*  pancakes
+========================================== */
+	.ready-in{
+		width: 180px;
+		height: 180px;
+		top: -40px;
+		right: -90px;
+	}
+
 }
 
 // ≥992px
@@ -25,11 +43,40 @@
 /*  art-of-cakes
 ========================================== */
 	.art-of-cakes{
+		&__print{
+			font-size: 30px;
+			line-height: 36px;
+		}
 		.chef-cook{
 			&__slogan{
 				margin: 40px auto 30px auto;
 			}
 		}
+	}
+
+/*  pancakes
+========================================== */
+	.pancakes{
+		&__wrap{
+			max-width: 636px;
+		}
+		&__aside{
+			min-height: 250px;
+			max-width: 546px;
+			box-shadow: 0 15px 70px rgba(127, 106, 95, .6);
+		}
+		&__content{
+			box-shadow: 0 15px 70px rgba(127, 106, 95, .7);
+		}
+		&__text{
+			margin-top: 30px;
+		}
+	}
+	.ready-in{
+		width: 180px;
+		height: 180px;
+		top: -90px;
+		right: -90px;
 	}
 
 }
@@ -73,6 +120,25 @@
 			}
 	    }
 	}
+
+/*  art-of-cakes
+========================================== */
+	.art-of-cakes{
+		&__print{
+			font-size: 27px;
+			line-height: 33px;
+		}
+	}
+
+/*  pancakes
+========================================== */
+
+	.pancakes{
+		&__title{
+			font-size: 40px;
+		}
+	}
+
 }
 
 // ≥576px
@@ -107,6 +173,56 @@
 				left: 57px;
 				height: 53px;
 			}
+		}
+	}
+
+/*  art-of-cakes
+========================================== */
+	.art-of-cakes{
+		&__img-wr{
+			padding: 6px;
+		}
+		&__print{
+			font-size: 4.8vw;
+			line-height: 5.9vw;
+		}
+		.chef-cook{
+			&__text{
+				font-size: 20px;
+			}
+		}
+	}
+
+/*  pancakes
+========================================== */
+	.pancakes{
+		&__aside{
+			max-width: none;
+		}
+		&__content{
+			max-width: none;
+			padding: 120px 30px 40px 30px
+		}
+		&__title{
+			font-size: 8vw;
+		}
+		&__text{
+			// margin-top: 30px;
+		}
+	}
+	.ready-in{
+		width: 140px;
+		height: 140px;
+		top: -70px;
+		right: 30px;
+		&__title{
+			font-size: 16px;
+		}
+		&__num{
+			font-size: 70px;
+		}
+		&__min{
+			font-size: 16px;
 		}
 	}
 
