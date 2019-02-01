@@ -478,5 +478,100 @@ b, strong {
 }
 
 
+/*  pancakes
+========================================== */
+
+.pancakes{
+	background: url('../img/pancakes_bg.jpg') #e5e6e0 no-repeat;
+	background-size: cover;
+	padding: 140px 0 100px 0;
+	box-shadow: 0 8px 16px rgba(0, 0, 0, .3),
+				inset 0 6px 12px rgba(0, 0, 0, .06);
+	position: relative;
+
+	z-index: 100;
+	&__wrap{
+		max-width: 1066px;
+		margin: 0 auto;
+	}
+	&__aside{
+		background: url('../img/pancakes_aside.jpg') #ae9e9e no-repeat;
+		background-size: cover;
+		background-position: 61%;
+		max-width: 420px;
+		height: 500px;
+	}
+	&__content{
+		background: url('../img/pancakes_mill.png') #fff bottom right no-repeat;
+		position: relative;
+		padding: 70px 60px 40px 60px;
+		max-width: 546px;
+	}
+	&__title{
+		color: #56534c;
+		font-family: 'MyriadPro';
+		font-weight: 400;
+		font-size: 48px;
+	}
+	&__subtitle{
+		color: $subtitle;
+		font-family: 'MyriadPro';
+		font-size: 14px;
+		text-transform: uppercase;
+		margin-top: 10px;
+		font-weight: 400;
+	}
+	&__text{
+		font-family: 'ProximaNova';
+		font-size: 14px;
+		line-height: 24px;
+		margin-top: 60px;
+		font-weight: 400;
+	}
+}
+
+.ready-in{
+	background: url('../img/pancakes_readyin.png') #fff left top no-repeat;
+	background-position: cover;
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	top: -40px;
+	right: -100px;
+	box-shadow: 0 10px 70px rgba(0, 0, 0, .3);
+	&__title{
+		color: #a47d5e;
+		font-size: 18px;
+		text-transform: uppercase;
+	}
+	&__num{
+		color: #dfc691;
+		font-size: 92px;
+		text-transform: uppercase;
+	}
+	&__min{
+		color: #979285;
+		font-size: 18px;
+	}
+}
+
+/*  breakfast
+========================================== */
+
+.breakfast{
+	background: url('../img/breakfast_bg.jpg') #434757 no-repeat;
+	background-size: cover;
+	padding: 100px 0;
+}
+
+
+/*  sandwich
+========================================== */
+
+.sandwich{
+	background: #f3f1e9;
+	padding: 100px 0;
+}
+
 
 @import "media"; // Always at the end

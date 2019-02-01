@@ -10,6 +10,9 @@
 
 // ≥992px
 @include media-breakpoint-down(md) {
+
+/*  header
+========================================== */
 	.header{
 		&__slogan{
 			font-size: 78px;
@@ -18,6 +21,17 @@
 			margin: 55px 0;
 		}
 	}
+
+/*  art-of-cakes
+========================================== */
+	.art-of-cakes{
+		.chef-cook{
+			&__slogan{
+				margin: 40px auto 30px auto;
+			}
+		}
+	}
+
 }
 
 // ≥768px
