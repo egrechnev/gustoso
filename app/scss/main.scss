@@ -534,6 +534,28 @@ b, strong {
 	}
 }
 
+.slides{
+	max-width: 360px;
+    margin: 100px auto 0 auto;
+	&__img{
+		border-radius: 50%;
+		margin: 0 auto;
+	}
+	.slick-prev {
+	    &:before {
+	        content: $fa-var-angle-left;
+	        font-family: FontAwesome;
+	    }
+	}
+
+	.slick-next {
+	    &:before {
+	        content: $fa-var-angle-right;
+	        font-family: FontAwesome;
+	    }
+	}
+}
+
 .ready-in{
 	background: url('../img/pancakes_readyin.png') #fff left top no-repeat;
 	background-position: cover;
@@ -563,9 +585,57 @@ b, strong {
 ========================================== */
 
 .breakfast{
-	background: url('../img/breakfast_bg.jpg') #434757 no-repeat;
+	background: url('../img/breakfast_bg.jpg') center #434757 no-repeat;
 	background-size: cover;
 	padding: 100px 0;
+	text-align: center;
+	&__title{
+		color: $light;
+		font-size: 60px;
+	}
+	&__subtitle{
+		color: $breakfast-subtitle;
+		font-size: 18px;
+		line-height: 30px;
+		text-transform: uppercase;
+	}
+	.breakfast-menu{
+		margin-top: 55px;
+		position: relative;
+		&:last-child{
+			&::after{
+				display: none;
+			}
+		}
+		&::after{
+			content: "";
+			position: absolute;
+			bottom: -40px;
+			left: 0;
+			right: 0;
+			margin: auto;
+			width: 90px;
+			height: 27px;
+			background: url('../img/breakfast_separator.png') no-repeat;
+		}
+		&__title{
+			color: $light;
+			font-size: 30px;
+		}
+		&__text{
+			color: $breakfast-menu-text;
+			font-family: 'ProximaNova';
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 40px;
+		}
+		&__cost{
+			color: $breakfast-menu-cost;
+			font-size: 36px;
+			font-weight: 400;
+			line-height: 50px;
+		}
+	}
 }
 
 
