@@ -532,61 +532,63 @@ b, strong {
 		margin-top: 60px;
 		font-weight: 400;
 	}
+
+	.slides{
+		max-width: 360px;
+	    margin: 100px auto 0 auto;
+		&__img{
+			border-radius: 50%;
+			margin: 0 auto;
+		}
+		.slick-prev {
+		    &:before {
+		        content: $fa-var-angle-left;
+		        font-family: FontAwesome;
+		    }
+		}
+
+		.slick-next {
+		    &:before {
+		        content: $fa-var-angle-right;
+		        font-family: FontAwesome;
+		    }
+		}
+	}
+
+	.ready-in{
+		background: url('../img/pancakes_readyin.png') #fff left top no-repeat;
+		background-position: cover;
+		width: 200px;
+		height: 200px;
+		position: absolute;
+		top: -40px;
+		right: -100px;
+		box-shadow: 0 10px 70px rgba(127, 106, 95, .7);
+		&__title{
+			color: #a47d5e;
+			font-size: 18px;
+			text-transform: uppercase;
+		}
+		&__num{
+			color: #dfc691;
+			font-size: 92px;
+			text-transform: uppercase;
+		}
+		&__min{
+			color: #979285;
+			font-size: 18px;
+		}
+	}
 }
 
-.slides{
-	max-width: 360px;
-    margin: 100px auto 0 auto;
-	&__img{
-		border-radius: 50%;
-		margin: 0 auto;
-	}
-	.slick-prev {
-	    &:before {
-	        content: $fa-var-angle-left;
-	        font-family: FontAwesome;
-	    }
-	}
-
-	.slick-next {
-	    &:before {
-	        content: $fa-var-angle-right;
-	        font-family: FontAwesome;
-	    }
-	}
-}
-
-.ready-in{
-	background: url('../img/pancakes_readyin.png') #fff left top no-repeat;
-	background-position: cover;
-	width: 200px;
-	height: 200px;
-	position: absolute;
-	top: -40px;
-	right: -100px;
-	box-shadow: 0 10px 70px rgba(127, 106, 95, .7);
-	&__title{
-		color: #a47d5e;
-		font-size: 18px;
-		text-transform: uppercase;
-	}
-	&__num{
-		color: #dfc691;
-		font-size: 92px;
-		text-transform: uppercase;
-	}
-	&__min{
-		color: #979285;
-		font-size: 18px;
-	}
-}
 
 /*  breakfast
 ========================================== */
 
 .breakfast{
-	background: url('../img/breakfast_bg.jpg') center #434757 no-repeat;
+	background: url('../img/breakfast_bg.jpg') #434757 no-repeat;
 	background-size: cover;
+	background-position-x: right;
 	padding: 100px 0;
 	text-align: center;
 	&__title{
@@ -598,6 +600,7 @@ b, strong {
 		font-size: 18px;
 		line-height: 30px;
 		text-transform: uppercase;
+		text-shadow: 0 0 3px $dark;
 	}
 	.breakfast-menu{
 		margin-top: 55px;
@@ -634,6 +637,43 @@ b, strong {
 			font-size: 36px;
 			font-weight: 400;
 			line-height: 50px;
+		}
+	}
+	.breakfast-sheet{
+		background: url('../img/breakfast_sheet.png') center no-repeat;
+		background-size: contain;
+		max-width: 508px;
+		height: 642px;
+		padding: 218px 89px 0 59px;
+		margin: 0 auto;
+		&__title{
+			font-size: 44px;
+			line-height: 55px;
+		}
+		&__text{
+			font-family: 'ProximaNova';
+			font-size: 14px;
+			font-weight: 400;
+			letter-spacing: 0.5px;
+			line-height: 30px;
+			margin-top: 40px;
+
+		}
+		&__btn{
+			font-size: 18px;
+			font-weight: 700;
+			line-height: 30px;
+			margin: 40px auto 0 auto;
+			text-transform: uppercase;
+			color: $breakfast-sheet-btn-text;
+			cursor: pointer;
+			padding: 10px;
+			max-width: 190px;
+			border: 1px solid $breakfast-sheet-btn-border;
+			transition: all .2s;
+			&:hover{
+				color: $text;
+			}
 		}
 	}
 }
