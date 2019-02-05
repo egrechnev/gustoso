@@ -33,14 +33,6 @@
   src: local('ProximaNova Regular'), local('ProximaNova-Regular'),
        url('../fonts/ProximaNova/ProximaNova.woff') format('woff');
 }
-/* ProximaNova-regular - cyrillic_latin */
-@font-face {
-  font-family: 'MyriadPro';
-  font-style: normal;
-  font-weight: 400;
-  src: local('ProximaNova Regular'), local('MyriadPro-Regular'),
-       url('../fonts/MyriadPro/MyriadPro-400.woff') format('woff');
-}
 /* playfair-display-700 - cyrillic_latin */
 @font-face {
   font-family: 'PlayfairDisplay';

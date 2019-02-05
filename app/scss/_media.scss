@@ -100,10 +100,27 @@
 		&__subtitle{
 			text-shadow: 0 0 10px $dark;
 		}
+		.breakfast-menu{
+			&__text{
+				text-shadow: 0 0 10px $dark;
+			}
+			&__cost{
+				text-shadow: 0 0 10px $dark;
+			}
+		}
 		.breakfast-sheet{
 			height: 642px;
 			margin: 30px auto 0 auto;
 			padding: 218px 89px 0 59px;
+		}
+	}
+
+/*  sandwich
+========================================== */
+
+	.sandwich{
+		.composition{
+			margin-top: 55px;
 		}
 	}
 
@@ -184,6 +201,21 @@
 			}
 			&__min{
 				font-size: 17px;
+			}
+		}
+	}
+
+/*  sandwich
+========================================== */
+
+	.sandwich{
+		.composition{
+			margin-top: 0;
+			&:first-child{
+				margin-top: 55px;
+			}
+			&:last-child{
+				margin-bottom: 55px;
 			}
 		}
 	}
@@ -304,6 +336,34 @@
 				padding: 6px;
 				max-width: 160px;
 				border: 1px solid $breakfast-sheet-btn-border;
+			}
+		}
+	}
+
+/*  sandwich
+========================================== */
+
+	.sandwich{
+		.recipe{
+			&__wrap{
+				margin: -23px 0;
+			}
+			&__times{
+				width: 150px;
+				height: 150px;
+			}
+			&__ready-in{
+				width: 150px;
+				height: 150px;
+			}
+			&__num-ready-in{
+				font-size: 76px;
+			}
+			&__btn{
+				bottom: -23px;
+				left: -23px;
+				font-size: 16px;
+				padding: 10px 15px;
 			}
 		}
 	}

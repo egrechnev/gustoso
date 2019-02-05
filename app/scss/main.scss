@@ -42,6 +42,10 @@ ul{
     padding: 0;
 }
 
+h1, h2, h3, h4, h5, h6{
+	margin: 0;
+}
+
 .img-responsive {
 	display: inline-block;
 	max-width: 100%;
@@ -78,6 +82,7 @@ b, strong {
 .subtitle{
 	color: $subtitle;
 	font-size: 14px;
+	line-height: 30px;
 	text-transform: uppercase;
 }
 
@@ -113,7 +118,7 @@ b, strong {
 		}
 	}
 	&__slogan{
-		text-shadow: 0 1px 0 $text-shadow;
+		text-shadow: 0 1px 0 $slogan-shadow;
 		font-family: PlayfairDisplay;
 		font-size: 92px;
 		font-weight: 700;
@@ -406,12 +411,6 @@ b, strong {
 	background-size: cover;
 	padding: 100px 0;
 	text-align: center;
-	&__title{
-
-	}
-	&__subtitle{
-
-	}
 	&__desc{
 		font-family: 'ProximaNova';
 		line-height: 24px;
@@ -443,7 +442,7 @@ b, strong {
 		font-size: 30px;
 		font-weight: 400;
 		line-height: 36px;
-		color: #c9b176;
+		color: $art-of-cakes-print;
 		text-transform: uppercase;
 	}
 	.chef-cook{
@@ -511,20 +510,6 @@ b, strong {
 		max-width: 546px;
 		box-shadow: 5px 15px 70px rgba(127, 106, 95, .7);
 	}
-	&__title{
-		color: #56534c;
-		font-family: 'MyriadPro';
-		font-weight: 400;
-		font-size: 48px;
-	}
-	&__subtitle{
-		color: $subtitle;
-		font-family: 'MyriadPro';
-		font-size: 14px;
-		text-transform: uppercase;
-		margin-top: 10px;
-		font-weight: 400;
-	}
 	&__text{
 		font-family: 'ProximaNova';
 		font-size: 14px;
@@ -556,7 +541,7 @@ b, strong {
 	}
 
 	.ready-in{
-		background: url('../img/pancakes_readyin.png') #fff left top no-repeat;
+		background: url('../img/ready-in.png') #fff left top no-repeat;
 		background-position: cover;
 		width: 200px;
 		height: 200px;
@@ -565,17 +550,16 @@ b, strong {
 		right: -100px;
 		box-shadow: 0 10px 70px rgba(127, 106, 95, .7);
 		&__title{
-			color: #a47d5e;
+			color: $subtitle;
 			font-size: 18px;
 			text-transform: uppercase;
 		}
 		&__num{
-			color: #dfc691;
+			color: $ready-in-num;
 			font-size: 92px;
-			text-transform: uppercase;
 		}
 		&__min{
-			color: #979285;
+			color: $ready-in-min;
 			font-size: 18px;
 		}
 	}
@@ -605,7 +589,7 @@ b, strong {
 		opacity: .6;
 	}
 	&__title{
-		color: $light;
+		color: $title-light;
 		font-size: 60px;
 	}
 	&__subtitle{
@@ -699,8 +683,101 @@ b, strong {
 ========================================== */
 
 .sandwich{
-	background: #f3f1e9;
+	background: url('../img/sandwich_bg-top.png') $sandwich-bg center top no-repeat;
 	padding: 100px 0;
+	text-align: center;
+	.composition{
+		margin-bottom: 55px;
+		&:last-child{
+			margin-bottom: 0;
+		}
+		&__img{
+			border-radius: 50%;
+			width: 100px;
+			height: 100px;
+			overflow: hidden;
+			margin: 0 auto;
+			box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
+		}
+		&__title{
+			font-size: 30px;
+			font-weight: 700;
+			color: $composition-title;
+			margin-top: 20px;
+		}
+		&__text{
+			font-family: 'ProximaNova';
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 20px;
+			margin-top: 20px;
+		}
+	}
+	.recipe{
+		background: url('../img/sandwich.jpg') center no-repeat;
+		background-size: cover;
+		border: 10px solid white;
+		box-shadow: 0 5px 18px rgba(127, 106, 95, .2);
+		position: relative;
+		&__wrap{
+			margin: -33px 0;
+		}
+		&__times{
+			background: $light;
+			opacity: .8;
+			width: 200px;
+			height: 200px;
+			letter-spacing: 2px;
+			margin-top: 1px;
+			&:first-child{
+				margin-top: 0;
+			}
+		}
+		&__ready-in{
+			background: url('../img/ready-in.png') $light no-repeat;
+			background-position: cover;
+			width: 200px;
+			height: 200px;
+			letter-spacing: 2px;
+		}
+		&__title{
+			color: #a47d5e;
+			font-size: 18px;
+			text-transform: uppercase;
+		}
+		&__num{
+			color: #56534c;
+			font-size: 60px;
+			line-height: 72px;
+			text-transform: uppercase;
+		}
+		&__num-ready-in{
+			color: $ready-in-num;
+			font-size: 92px;
+		}
+		&__min{
+			color: #979285;
+			font-size: 18px;
+		}
+		&__btn{
+			position: absolute;
+			bottom: -33px;
+			left: -33px;
+			border: 1px dashed $recipe-btn;
+			background: $light;
+			color: $recipe-btn;
+			font-size: 18px;
+			line-height: 30px;
+			padding: 14px 27px;
+			display: inline-block;
+			text-transform: uppercase;
+			cursor: pointer;
+			transition: all .2s;
+			&:hover{
+				color: $text;
+			}
+		}
+	}
 }
 
 
