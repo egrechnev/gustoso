@@ -591,6 +591,19 @@ b, strong {
 	background-position-x: right;
 	padding: 100px 0;
 	text-align: center;
+	position: relative;
+	&::after{
+		content: "";
+		background: url('../img/breakfast_wheat.png') no-repeat;
+		background-size: contain;
+		width: 100%;
+		max-width: 346px;
+		height: 204px;
+		position: absolute;
+		right: 0px;
+		bottom: 75px;
+		opacity: .6;
+	}
 	&__title{
 		color: $light;
 		font-size: 60px;
@@ -646,6 +659,7 @@ b, strong {
 		height: 642px;
 		padding: 218px 89px 0 59px;
 		margin: 0 auto;
+		position: relative;
 		&__title{
 			font-size: 44px;
 			line-height: 55px;
@@ -671,6 +685,8 @@ b, strong {
 			max-width: 190px;
 			border: 1px solid $breakfast-sheet-btn-border;
 			transition: all .2s;
+			position: relative;
+			z-index:100;
 			&:hover{
 				color: $text;
 			}
