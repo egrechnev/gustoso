@@ -37,6 +37,14 @@
 		}
 	}
 
+/*  footer
+========================================== */
+	.footer{
+		&__list{
+			padding: 25px 15px;
+		}
+	}
+
 }
 
 // ≥992px
@@ -121,6 +129,17 @@
 	.sandwich{
 		.composition{
 			margin-top: 55px;
+		}
+	}
+
+/*  footer
+========================================== */
+	.footer{
+		&__logo{
+			margin: 20px 0;
+		}
+		&__list{
+			padding: 25px 40px;
 		}
 	}
 
@@ -365,6 +384,17 @@
 				font-size: 16px;
 				padding: 10px 15px;
 			}
+		}
+	}
+
+/*  footer
+========================================== */
+	.footer{
+		&__list{
+			padding: 25px 5vw;
+		}
+		&__link{
+			font-size: 2.8vw;
 		}
 	}
 

@@ -781,4 +781,35 @@ b, strong {
 }
 
 
+/*  footer
+========================================== */
+
+.footer{
+	background: $footer-bg;
+	padding: 10px 0 70px 0;
+	&__logo{
+		width: 140px;
+    	display: inline-block;
+	}
+	&__list{
+		border-top: 1px solid $footer-border;
+		border-bottom: 1px solid $footer-border;
+		padding: 25px 40px;
+	}
+	&__link{
+		color: $text;
+		letter-spacing: 4px;
+		font-size: 14px;
+		line-height: 24px;
+		text-transform: uppercase;
+		&:hover{
+			color: $footer-link-hover;
+			text-decoration: none;
+		}
+	}
+}
+
+// background-color: #c2beba;
+// box-shadow: 0 35px 17.6px 25.4px rgba(0, 0, 0, 0.38);
+
 @import "media"; // Always at the end
