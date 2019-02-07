@@ -19,10 +19,10 @@
 ========================================== */
 	.pancakes{
 		.ready-in{
-			width: 180px;
-			height: 180px;
+			width: 160px;
+			height: 160px;
 			top: -40px;
-			right: -90px;
+			right: -80px;
 		}
 	}
 
@@ -34,6 +34,9 @@
 		.breakfast-sheet{
 			height: 608px;
 			padding: 188px 89px 0 59px;
+			&__title{
+				font-size: 38px;
+			}
 		}
 	}
 
@@ -83,7 +86,7 @@
 		}
 		&__aside{
 			min-height: 250px;
-			max-width: 546px;
+			max-width: 576px;
 			box-shadow: 0 15px 70px rgba(127, 106, 95, .6);
 		}
 		&__content{
@@ -120,6 +123,9 @@
 			height: 642px;
 			margin: 30px auto 0 auto;
 			padding: 218px 89px 0 59px;
+			&__title{
+				font-size: 44px;
+			}
 		}
 	}
 
@@ -211,7 +217,7 @@
 			width: 140px;
 			height: 140px;
 			top: -70px;
-			right: -42px;
+			right: -45px;
 			&__title{
 				font-size: 16px;
 			}
@@ -329,7 +335,7 @@
 		overflow: hidden;
 		.breakfast-sheet{
 			height: 122vw;
-			padding: 36vw 79px 0 49px;
+			padding: 36vw 15.6vw 0 10vw;
 			margin-right: auto;
 			&__title{
 				font-size: 7vw;
@@ -341,7 +347,7 @@
 				font-weight: 400;
 				letter-spacing: 0.5px;
 				line-height: 5vw;
-				margin-top: 9vw;
+				margin-top: 8vw;
 
 			}
 			&__btn{

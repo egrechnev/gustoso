@@ -500,14 +500,14 @@ b, strong {
 		background: url('../img/pancakes_aside.jpg') #ae9e9e no-repeat;
 		background-size: cover;
 		background-position: 61%;
-		max-width: 420px;
+		width: 100%;
 		box-shadow: -5px 15px 70px rgba(127, 106, 95, .6);
 	}
 	&__content{
 		background: url('../img/pancakes_mill.png') #fff bottom right no-repeat;
 		position: relative;
 		padding: 70px 60px 40px 60px;
-		max-width: 546px;
+		max-width: 576px;
 		box-shadow: 5px 15px 70px rgba(127, 106, 95, .7);
 	}
 	&__text{
@@ -543,11 +543,11 @@ b, strong {
 	.ready-in{
 		background: url('../img/ready-in.png') #fff left top no-repeat;
 		background-position: cover;
-		width: 200px;
-		height: 200px;
+		width: 180px;
+		height: 180px;
 		position: absolute;
 		top: -40px;
-		right: -100px;
+		right: -90px;
 		box-shadow: 0 10px 70px rgba(127, 106, 95, .7);
 		&__title{
 			color: $subtitle;
